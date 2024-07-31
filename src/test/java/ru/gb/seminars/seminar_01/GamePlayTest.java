@@ -3,8 +3,8 @@ package ru.gb.seminars.seminar_01;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import org.max.seminar.type.Ranks;
-import org.max.seminar.type.Suits;
+import ru.gb.seminars.seminar_01.type.Ranks;
+import ru.gb.seminars.seminar_01.type.Suits;
 
 /**
  * Тест кейс для проверки условий определения победителя
