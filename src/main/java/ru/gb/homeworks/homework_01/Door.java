@@ -1,13 +1,23 @@
 package ru.gb.homeworks.homework_01;
 
 public class Door {
-    boolean hasCar;
+    private final int index;
+    private boolean hasPrize;
 
-    public Door(boolean hasCar) {
-        this.hasCar = hasCar;
+    public Door(int index) {
+        this.index = index;
+        this.hasPrize = false;
     }
 
-    public boolean hasCar() {
-        return hasCar;
+    public void setHasPrize(boolean hasPrize) {
+        this.hasPrize = hasPrize;
+    }
+
+    public int getIndex() {
+        return index;
+    }
+
+    public boolean hasPrize() {
+        return hasPrize;
     }
 }

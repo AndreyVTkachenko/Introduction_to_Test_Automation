@@ -3,10 +3,14 @@ package ru.gb.homeworks.homework_01;
 public class Main {
 
     public static void main(String[] args) {
-        int quantity = 1000; // количество игр
+        // всегда меняет дверь
+        MontyHallParadox simulationTrue = new MontyHallParadox(1000, true);
+        System.out.println("Игрок всегда меняет дверь");
+        simulationTrue.runGame();
 
-        MontyHallSimulation simulation = new MontyHallSimulation(quantity);
-        simulation.runSimulation();
-        simulation.printResults();
+        // никогда не меняет дверь
+        MontyHallParadox simulationFalse = new MontyHallParadox(1000, false);
+        System.out.println("Игрок никогда не меняет дверь");
+        simulationFalse.runGame();
     }
 }

@@ -1,46 +1,39 @@
 package ru.gb.homeworks.homework_01;
 
-import java.util.List;
 import java.util.Random;
 
 public class Game {
-    private List<Door> doors;
-    private int playerChoice;
-    private int hostChoice;
-    private int remainingDoor;
+    private final Door[] doors;
+    private final Random random;
 
     public Game() {
-        Random random = new Random();
+        doors = new Door[3];
+        random = new Random();
 
-        // Инициализация дверей
-        doors = List.of(new Door(false), new Door(false), new Door(false));
-        doors.get(random.nextInt(3)).hasCar = true; // Размещение машины за случайной дверью
+        for (int i = 0; i < doors.length; i++) {
+            doors[i] = new Door(i);
+        }
 
-        // Игрок делает выбор
-        playerChoice = random.nextInt(3);
+        int prizeDoorIndex = random.nextInt(doors.length);
+        doors[prizeDoorIndex].setHasPrize(true);
+    }
 
-        // Ведущий выбирает дверь без машины
-        for (int i = 0; i < doors.size(); i++) {
-            if (i != playerChoice && !doors.get(i).hasCar()) {
-                hostChoice = i;
-                break;
+    public Door getDoor(int index) {
+        return doors[index];
+    }
+
+    public Door getDoorToReveal(int chosenDoorIndex) {
+
+        if (chosenDoorIndex < 0 || chosenDoorIndex >= doors.length) {
+            throw new IllegalArgumentException("Некорректный индекс двери: " + chosenDoorIndex);
+        }
+
+        for (Door door : doors) {
+            if (!door.hasPrize() && door.getIndex() != chosenDoorIndex) {
+                return door;
             }
         }
 
-        // Определение оставшейся двери
-        for (int i = 0; i < doors.size(); i++) {
-            if (i != playerChoice && i != hostChoice) {
-                remainingDoor = i;
-                break;
-            }
-        }
-    }
-
-    public boolean playWithChange() {
-        return doors.get(remainingDoor).hasCar();
-    }
-
-    public boolean playWithoutChange() {
-        return doors.get(playerChoice).hasCar();
+        return null;
     }
 }
