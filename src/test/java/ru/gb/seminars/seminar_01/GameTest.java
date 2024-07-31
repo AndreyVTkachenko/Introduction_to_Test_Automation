@@ -34,7 +34,7 @@ public class GameTest extends AbstractTest {
         game.addCardToCasino();
         game.addCardToPlayer();
         //then
-        Assertions.assertTrue(game.getGamer().getHandSum() > 0);
-        Assertions.assertTrue(game.getCasino().getHandSum() > 0);
+        Assertions.assertTrue(game.getGamer().getHandSumm() > 0);
+        Assertions.assertTrue(game.getCasino().getHandSumm() > 0);
     }
 }

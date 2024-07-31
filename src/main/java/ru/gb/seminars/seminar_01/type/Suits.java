@@ -6,7 +6,7 @@ package ru.gb.seminars.seminar_01.type;
 public enum Suits {
 
     CLUBS ("Трефы"),
-    DIAMONDS ("Бубны"),
+    DIAMONDS ("Буби"),
     HEARTS ("Черви"),
     SPADES ("Пики");
 

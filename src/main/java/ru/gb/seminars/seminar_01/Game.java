@@ -49,16 +49,16 @@ public class Game {
 
     //Проверка, что сумма на руке не выше лимита
     private boolean checkHand(Player player) {
-        return player.getHandSum() <= max ;
+        return player.getHandSumm() <= max ;
     }
 
     private boolean checkHand21(Player player) {
-        return player.getHandSum() == max ;
+        return player.getHandSumm() == max ;
     }
 
     //Проверка, что сумма на руке не риска и можно взять еще карту
     private boolean checkRisk(Player player) {
-        return player.getHandSum() > max - player.getRisk() ;
+        return player.getHandSumm() > max - player.getRisk() ;
     }
 
 
@@ -98,10 +98,10 @@ public class Game {
         }
 
         if (checkRisk(gamer)) {
-            if(gamer.getHandSum() > casino.getHandSum() && !checkRisk(this.getCasino())) {
+            if(gamer.getHandSumm() > casino.getHandSumm() && !checkRisk(this.getCasino())) {
                 this.addCardToCasino();
             }
-            return gamer.getHandSum() > casino.getHandSum()? gamer : casino;
+            return gamer.getHandSumm() > casino.getHandSumm()? gamer : casino;
         }
         return null;
     }
