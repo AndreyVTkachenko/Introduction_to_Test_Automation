@@ -8,7 +8,7 @@ import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.query.Query;
 
-public class MainDemo {
+public class Main {
     private static final SessionFactory ourSessionFactory;
 
     static {
