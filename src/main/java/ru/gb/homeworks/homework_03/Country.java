@@ -1,5 +1,4 @@
-
-package ru.gb.seminars.seminar_03.accuweather.location;
+package ru.gb.homeworks.homework_03;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -19,6 +18,17 @@ public class Country {
     private String id;
     @JsonProperty("LocalizedName")
     private String localizedName;
+
+    public String getEnglishName() {
+        return EnglishName;
+    }
+
+    public void setEnglishName(String englishName) {
+        EnglishName = englishName;
+    }
+
+    @JsonProperty("EnglishName")
+    private String EnglishName;
 
     @JsonProperty("ID")
     public String getId() {

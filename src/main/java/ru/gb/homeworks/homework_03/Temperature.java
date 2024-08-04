@@ -1,4 +1,4 @@
-package ru.gb.seminars.seminar_03.accuweather.weather;
+package ru.gb.homeworks.homework_03;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -20,6 +20,10 @@ public class Temperature {
     private Metric metric;
     @JsonProperty("Imperial")
     private Imperial imperial;
+    @JsonProperty("Maximum")
+    private Maximum maximum;
+    @JsonProperty("Minimum")
+    private Minimum minimum;
 
     @JsonProperty("Metric")
     public Metric getMetric() {
@@ -34,6 +38,22 @@ public class Temperature {
     @JsonProperty("Imperial")
     public Imperial getImperial() {
         return imperial;
+    }
+
+    public Minimum getMinimum() {
+        return minimum;
+    }
+
+    public void setMinimum(Minimum minimum) {
+        this.minimum = minimum;
+    }
+
+    public Maximum getMaximum() {
+        return maximum;
+    }
+
+    public void setMaximum(Maximum maximum) {
+        this.maximum = maximum;
     }
 
     @JsonProperty("Imperial")

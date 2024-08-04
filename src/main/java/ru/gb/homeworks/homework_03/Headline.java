@@ -1,5 +1,4 @@
-
-package ru.gb.seminars.seminar_03.accuweather.weather;
+package ru.gb.homeworks.homework_03;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;

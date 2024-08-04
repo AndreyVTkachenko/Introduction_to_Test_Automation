@@ -14,7 +14,7 @@ import javax.annotation.processing.Generated;
     "UnitType"
 })
 @Generated("jsonschema2pojo")
-public class Maximum {
+public class Minimum {
 
     @JsonProperty("Value")
     private Double value;

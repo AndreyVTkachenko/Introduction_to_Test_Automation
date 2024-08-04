@@ -1,5 +1,5 @@
 
-package ru.gb.seminars.seminar_03.accuweather.weather;
+package ru.gb.seminars.seminar_03.accuweather;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -14,7 +14,7 @@ import javax.annotation.processing.Generated;
     "UnitType"
 })
 @Generated("jsonschema2pojo")
-public class Maximum {
+public class Metric {
 
     @JsonProperty("Value")
     private Double value;

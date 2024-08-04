@@ -1,5 +1,4 @@
-
-package ru.gb.seminars.seminar_03.accuweather.location;
+package ru.gb.seminars.seminar_03.accuweather;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -10,15 +9,18 @@ import javax.annotation.processing.Generated;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
     "ID",
-    "LocalizedName"
+    "LocalizedName",
+    "EnglishName"
 })
 @Generated("jsonschema2pojo")
-public class Country {
+public class Region {
 
     @JsonProperty("ID")
     private String id;
     @JsonProperty("LocalizedName")
     private String localizedName;
+    @JsonProperty("EnglishName")
+    private String englishName;
 
     @JsonProperty("ID")
     public String getId() {
@@ -38,6 +40,16 @@ public class Country {
     @JsonProperty("LocalizedName")
     public void setLocalizedName(String localizedName) {
         this.localizedName = localizedName;
+    }
+
+    @JsonProperty("EnglishName")
+    public String getEnglishName() {
+        return englishName;
+    }
+
+    @JsonProperty("EnglishName")
+    public void setEnglishName(String englishName) {
+        this.englishName = englishName;
     }
 
 }

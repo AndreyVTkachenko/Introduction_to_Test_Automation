@@ -1,10 +1,8 @@
-package ru.gb.seminars.seminar_03.accuweather.weather;
+package ru.gb.seminars.seminar_03.accuweather;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
-import ru.gb.seminars.seminar_03.accuweather.Imperial;
-import ru.gb.seminars.seminar_03.accuweather.Metric;
 
 import javax.annotation.processing.Generated;
 
@@ -14,7 +12,7 @@ import javax.annotation.processing.Generated;
     "Imperial"
 })
 @Generated("jsonschema2pojo")
-public class Temperature {
+public class Elevation {
 
     @JsonProperty("Metric")
     private Metric metric;

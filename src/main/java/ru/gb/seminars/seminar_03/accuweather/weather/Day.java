@@ -1,17 +1,19 @@
+
 package ru.gb.seminars.seminar_03.accuweather.weather;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
+import javax.annotation.processing.Generated;
+
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
     "Icon",
     "IconPhrase",
-    "HasPrecipitation",
-    "PrecipitationType",
-    "PrecipitationIntensity"
+    "HasPrecipitation"
 })
+@Generated("jsonschema2pojo")
 public class Day {
 
     @JsonProperty("Icon")
@@ -20,10 +22,6 @@ public class Day {
     private String iconPhrase;
     @JsonProperty("HasPrecipitation")
     private Boolean hasPrecipitation;
-    @JsonProperty("PrecipitationType")
-    private String precipitationType;
-    @JsonProperty("PrecipitationIntensity")
-    private String precipitationIntensity;
 
     @JsonProperty("Icon")
     public Integer getIcon() {
@@ -53,26 +51,6 @@ public class Day {
     @JsonProperty("HasPrecipitation")
     public void setHasPrecipitation(Boolean hasPrecipitation) {
         this.hasPrecipitation = hasPrecipitation;
-    }
-
-    @JsonProperty("PrecipitationType")
-    public String getPrecipitationType() {
-        return precipitationType;
-    }
-
-    @JsonProperty("PrecipitationType")
-    public void setPrecipitationType(String precipitationType) {
-        this.precipitationType = precipitationType;
-    }
-
-    @JsonProperty("PrecipitationIntensity")
-    public String getPrecipitationIntensity() {
-        return precipitationIntensity;
-    }
-
-    @JsonProperty("PrecipitationIntensity")
-    public void setPrecipitationIntensity(String precipitationIntensity) {
-        this.precipitationIntensity = precipitationIntensity;
     }
 
 }
