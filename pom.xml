@@ -111,12 +111,12 @@
           </schemas>  -->
 
 <!--          для лекции 04-->
-          <url>jdbc:sqlite:for_lesson_04.db</url>
-          <locations>filesystem:db/lesson_04/migration</locations>
+<!--          <url>jdbc:sqlite:for_lesson_04.db</url>-->
+<!--          <locations>filesystem:db/lesson_04/migration</locations>-->
 
 <!--          для семинара 04-->
-<!--          <url>jdbc:sqlite:for_seminar_04.db</url>-->
-<!--          <locations>filesystem:db/seminar_04/migration</locations>-->
+          <url>jdbc:sqlite:for_seminar_04.db</url>
+          <locations>filesystem:db/seminar_04/migration</locations>
 
 <!--          для домашней работы-->
 <!--          <url>jdbc:sqlite:for_homework_04.db</url>-->
