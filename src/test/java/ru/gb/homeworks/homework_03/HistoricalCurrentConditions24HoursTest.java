@@ -11,7 +11,7 @@ import static io.restassured.RestAssured.given;
 public class HistoricalCurrentConditions24HoursTest extends AccuweatherAbstractTest {
 
     @Test
-    void getHistoricalTwentyFourHours() {
+    void getHistoricalCurrentConditions24Hours() {
 
         List<Historical> response = given()
                 .queryParam("apikey", getApiKey())

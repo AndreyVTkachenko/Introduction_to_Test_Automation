@@ -8,7 +8,7 @@ public class WeatherTenDaysTest extends AccuweatherAbstractTest {
 
 
     @Test
-    void getTenDaysShouldReturn401() {
+    void getWeatherTenDays_shouldReturn401() {
         given()
                 .queryParam("apikey", getApiKey())
                 .pathParam("version", "v1")

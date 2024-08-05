@@ -9,7 +9,7 @@ import static io.restassured.RestAssured.given;
 public class WeatherFiveDaysTest extends AccuweatherAbstractTest{
 
     @Test
-    void testFiveDays(){
+    void getWeatherFiveDays(){
         Weather weather = given()
                 .queryParam("apikey", getApiKey())
                 .when()

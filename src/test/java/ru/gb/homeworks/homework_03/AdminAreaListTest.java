@@ -11,7 +11,7 @@ import static io.restassured.RestAssured.given;
 public class AdminAreaListTest extends AccuweatherAbstractTest {
 
     @Test
-    void getListAdminArea() {
+    void getAdminAreaList() {
 
         List<AdministrativeArea> response = given()
                 .queryParam("apikey", getApiKey())

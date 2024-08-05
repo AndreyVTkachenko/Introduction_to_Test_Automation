@@ -27,4 +27,5 @@ public class CurrentConditionsTest extends AccuweatherAbstractTest {
         Assertions.assertEquals("http://www.accuweather.com/en/jp/oga-shi/16/current-weather/16?lang=en-us",
                 response.get(0).getMobileLink());
     }
+
 }

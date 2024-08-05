@@ -11,7 +11,7 @@ import static io.restassured.RestAssured.given;
 public class ListOfIndicesInASpecificGroupTest extends AccuweatherAbstractTest{
 
     @Test
-    void getListInASpecificGroup() {
+    void getListOfIndicesInASpecificGroup() {
 
         List<MetaData> response = given()
                 .queryParam("apikey", getApiKey())

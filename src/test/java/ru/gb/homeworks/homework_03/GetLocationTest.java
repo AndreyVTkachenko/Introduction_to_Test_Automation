@@ -10,7 +10,7 @@ import static io.restassured.RestAssured.given;
 public class GetLocationTest extends AccuweatherAbstractTest {
 
     @Test
-    void getLocation() {
+    void getGetLocation() {
 
         List<Location> result = given()
                 .queryParam("apikey", getApiKey())

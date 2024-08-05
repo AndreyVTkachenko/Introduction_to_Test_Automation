@@ -11,7 +11,7 @@ import static io.restassured.RestAssured.given;
 public class CitySearchTest extends AccuweatherAbstractTest {
 
     @Test
-    void getTextSearchCity() {
+    void getCitySearch() {
 
         List<Location> response = given()
                 .queryParam("apikey", getApiKey())

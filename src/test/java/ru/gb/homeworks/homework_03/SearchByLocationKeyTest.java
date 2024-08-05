@@ -8,7 +8,7 @@ import static io.restassured.RestAssured.given;
 public class SearchByLocationKeyTest extends AccuweatherAbstractTest {
 
     @Test
-    void searchByLocationKey() {
+    void getSearchByLocationKey() {
 
         Location location = given()
                 .queryParam("apikey", getApiKey())

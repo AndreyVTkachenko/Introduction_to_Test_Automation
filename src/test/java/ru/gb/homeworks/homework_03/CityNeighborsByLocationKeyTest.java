@@ -11,7 +11,7 @@ import static io.restassured.RestAssured.given;
 public class CityNeighborsByLocationKeyTest extends AccuweatherAbstractTest{
 
     @Test
-    void getLocationKeyNeighbors() {
+    void getCityNeighborsByLocationKey() {
         List<Location> response = given()
                 .queryParam("apikey", getApiKey())
                 .when()

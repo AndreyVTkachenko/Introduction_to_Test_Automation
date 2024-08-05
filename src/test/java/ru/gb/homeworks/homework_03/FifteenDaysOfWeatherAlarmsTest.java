@@ -20,4 +20,5 @@ public class FifteenDaysOfWeatherAlarmsTest extends AccuweatherAbstractTest {
                 .time(lessThan(2000L))
                 .statusLine("HTTP/1.1 401 Unauthorized");
     }
+
 }

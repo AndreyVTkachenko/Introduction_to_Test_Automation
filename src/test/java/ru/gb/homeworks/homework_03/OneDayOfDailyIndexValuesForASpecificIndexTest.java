@@ -11,7 +11,7 @@ import static io.restassured.RestAssured.given;
 public class OneDayOfDailyIndexValuesForASpecificIndexTest extends AccuweatherAbstractTest{
 
     @Test
-    void getOneDayValuesGroup() {
+    void getOneDayOfDailyIndexValuesForASpecificIndex() {
 
         List<Index> response = given()
                 .queryParam("apikey", getApiKey())

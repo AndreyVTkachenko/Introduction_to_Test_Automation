@@ -11,7 +11,7 @@ import static io.restassured.RestAssured.given;
 public class RegionListTest extends AccuweatherAbstractTest{
 
     @Test
-    void getListRegions() {
+    void getRegionList() {
 
         List<Region> response = given()
                 .queryParam("apikey", getApiKey())
