@@ -199,6 +199,7 @@
 <!--          <locations>filesystem:db/homework_04/migration</locations>-->
 
 <!--          для лекции 06-->
+          //Почему из этой директории ?
           <url>jdbc:sqlite:for_lesson_06.db</url>
           <locations>filesystem:db/lesson_06/migration</locations>
 
