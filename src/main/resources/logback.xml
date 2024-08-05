@@ -14,6 +14,7 @@
 <!--        <file>${LOG_DIR}/homework_05.log</file>-->
 <!--        для лекции 06-->
         <file>${LOG_DIR}/lesson_06.log</file>
+
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!-- daily rollover -->
             <fileNamePattern>${LOG_FILE}.%d{yyyy-MM-dd}.gz</fileNamePattern>

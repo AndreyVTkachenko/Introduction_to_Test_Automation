@@ -29,6 +29,7 @@ public class RandomRecipesTest extends AbstractTest {
     @Story(value = "Тестирование метода RandomRecipes")
     void getRandomRecipes_whenValid_shouldReturn() {
         logger.info("Вызван метод получение рандомного рецепта");
+
         Response response = given()
                 .queryParam("apiKey", getApiKey())
                 .queryParam("number", 5)

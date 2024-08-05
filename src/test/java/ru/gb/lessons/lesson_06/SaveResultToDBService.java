@@ -52,3 +52,4 @@ public class SaveResultToDBService {
         logger.info("Данные тестирования успешно сохранены"+ url);
     }
 }
+

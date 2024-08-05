@@ -50,6 +50,5 @@ public class ConvertAmountsTest extends AbstractTest {
 
         Assertions.assertEquals(response.body().as(ConvertAmountsDto.class).getTargetAmount(),312.5);
 
-
     }
 }
