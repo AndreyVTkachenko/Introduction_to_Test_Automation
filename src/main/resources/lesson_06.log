@@ -1,0 +1,28 @@
+900  [main] INFO  r.g.l.lesson_06.SimilarRecipesTest - Вызван метод получение рецепата
+2437 [main] INFO  r.g.l.l.SaveResultToDBService - Подключение к базе данных
+2592 [main] INFO  r.g.l.l.SaveResultToDBService - Подключение к базе данных успешно осуществлено
+2592 [main] INFO  r.g.l.l.SaveResultToDBService - Сохранение результата тестирования recipes/715538/similar
+2596 [main] ERROR r.g.l.l.SaveResultToDBService - org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such table: data_result)
+2596 [main] INFO  r.g.l.l.SaveResultToDBService - Данные тестирования успешно сохраненыrecipes/715538/similar
+2884 [main] INFO  r.g.l.lesson_06.ConvertAmountsTest - Вызван метод конвертации
+3323 [main] INFO  r.g.l.l.SaveResultToDBService - Сохранение результата тестирования recipes/convert
+3323 [main] ERROR r.g.l.l.SaveResultToDBService - org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such table: data_result)
+3323 [main] INFO  r.g.l.l.SaveResultToDBService - Данные тестирования успешно сохраненыrecipes/convert
+3357 [main] INFO  r.g.l.lesson_06.RandomRecipesTest - Вызван метод получение рандомного рецепта
+3852 [main] INFO  r.g.l.l.SaveResultToDBService - Сохранение результата тестирования recipes/random
+3853 [main] ERROR r.g.l.l.SaveResultToDBService - org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such table: data_result)
+3853 [main] INFO  r.g.l.l.SaveResultToDBService - Данные тестирования успешно сохраненыrecipes/random
+954  [main] INFO  r.g.l.lesson_06.SimilarRecipesTest - Вызван метод получение рецепата
+2440 [main] INFO  r.g.l.l.SaveResultToDBService - Подключение к базе данных
+2595 [main] INFO  r.g.l.l.SaveResultToDBService - Подключение к базе данных успешно осуществлено
+2595 [main] INFO  r.g.l.l.SaveResultToDBService - Сохранение результата тестирования recipes/715538/similar
+2599 [main] ERROR r.g.l.l.SaveResultToDBService - org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such table: data_result)
+2600 [main] INFO  r.g.l.l.SaveResultToDBService - Данные тестирования успешно сохраненыrecipes/715538/similar
+2892 [main] INFO  r.g.l.lesson_06.ConvertAmountsTest - Вызван метод конвертации
+3283 [main] INFO  r.g.l.l.SaveResultToDBService - Сохранение результата тестирования recipes/convert
+3283 [main] ERROR r.g.l.l.SaveResultToDBService - org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such table: data_result)
+3283 [main] INFO  r.g.l.l.SaveResultToDBService - Данные тестирования успешно сохраненыrecipes/convert
+3311 [main] INFO  r.g.l.lesson_06.RandomRecipesTest - Вызван метод получение рандомного рецепта
+3790 [main] INFO  r.g.l.l.SaveResultToDBService - Сохранение результата тестирования recipes/random
+3791 [main] ERROR r.g.l.l.SaveResultToDBService - org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such table: data_result)
+3791 [main] INFO  r.g.l.l.SaveResultToDBService - Данные тестирования успешно сохраненыrecipes/random
