@@ -7,9 +7,9 @@
     <property name="LOG_DIR" value="C:\Users\gepat\Documents\training at GeekBrains\Introduction to Test Automation\Introduction_to_Test_Automation\src\main\resources"/>
     <appender name="FILE" class="ch.qos.logback.core.FileAppender">
 <!--        для лекции 05-->
-        <file>${LOG_DIR}/lesson_05.log</file>
+<!--        <file>${LOG_DIR}/lesson_05.log</file>-->
 <!--        для семинара 05-->
-<!--        <file>${LOG_DIR}/seminar_05.log</file>-->
+        <file>${LOG_DIR}/seminar_05.log</file>
 <!--        для домашней работы 05-->
 <!--        <file>${LOG_DIR}/homework_05.log</file>-->
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
