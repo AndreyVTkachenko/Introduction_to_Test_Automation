@@ -34,6 +34,7 @@
 <!--        <mapping class="ru.gb.seminars.seminar_04.EmployeeEntity"/>-->
 
 <!--        для лекции 06-->
+            //Почему lesson_06?
         <property name="connection.url">jdbc:sqlite:for_lesson_06.db</property>
         <mapping class="ru.gb.lessons.lesson_06.AnalyzedInstruction"/>
         <mapping class="ru.gb.lessons.lesson_06.ConvertAmountsDto"/>
